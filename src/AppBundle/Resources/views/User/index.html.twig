@@ -1,0 +1,15 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AppBundle:User:index{% endblock %}
+
+{% block body %}
+<h1>Welcome to the User:index page</h1>
+
+{{ form_start(form) }}
+	{{ form_row(form.fullname) }}
+	{{ form_row(form.email) }}
+	{{ form_row(form.password) }}
+	{{ form_row(form.dob) }}
+{{ form_end(form) }}
+
+{% endblock %}

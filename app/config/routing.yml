@@ -1,0 +1,5 @@
+---
+
+_user: 
+    pattern: /
+    defaults: { _controller: AppBundle:User:index }

@@ -9,5 +9,5 @@ use Composer\Autoload\ClassLoader;
 $loader = require __DIR__.'/../vendor/autoload.php';
 
 AnnotationRegistry::registerLoader(array($loader, 'loadClass'));
-
+AnnotationRegistry::registerAutoloadNamespace("Symfony\Component\Validator\Constraints", "path/to/symfony/library/validator");
 return $loader;
